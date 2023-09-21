@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>3주차 Q2</title>
+    <style type="text/css">
+        .box{width: 500px;height: 50px;position: absolute;}
+        .box:nth-child(1){left: 30px; top:70px;background-color: yellow;z-index: 1;}
+        .box:nth-child(2){left:40px; top:90px;background-color: rgb(47, 255, 47);z-index: 2;}
+        #box{width: 500px;height: 50px;position: relative;left: 50px;top: 80px;background-color:rgb(0, 242, 255);}
+        #box:hover{background-color: red;}
+    </style>
+</head>
+<body>
+    <h1>박스의 위치</h1>
+    <div>
+        <div class="box"><b>절대 위치 설정 적용 - left 30px, top 70px</b></div>
+        <div class="box"><b>절대 위치 설정 적용 - left 40px, top 90px</b></div>
+    </div>
+    <div id="box"><b>상대 위치 설정 적용 - left 50px, top 80px</b></div>
+</body>
+</html>

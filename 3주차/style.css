@@ -1,0 +1,50 @@
+#menu{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(227, 227, 227);
+}
+#menu ul{
+    padding-left: 0;
+}
+.block{
+    line-height: 60px;
+    padding-inline:20px;
+    float: left;
+    width: auto;
+    text-align: center;
+    list-style:none;
+}
+.block:hover{
+    background-color: rgb(255, 144, 144);
+}
+header{text-align: center;}
+header>h1{
+    margin: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+nav{float: left;width: 25%;padding:20px;}
+section{float: right;width: 75%;padding:20px;}
+section>h2{
+    color: blue;
+}
+section>.content{
+    font-size: 16px;
+}
+section>.name{
+    font-size:16px;
+    text-indent: 30px;
+}
+footer{
+    padding:20px;
+    display: flex;
+}
+.copyright{
+    word-spacing: 20px;
+}
+header, nav, section, footer{
+    margin-bottom: 20px;border: 1px solid rgb(132, 132, 132);
+}
