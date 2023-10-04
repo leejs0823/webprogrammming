@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>5주차 3번</title>
+    <script src="https://code.jquery.com/jQuery-3.6.1.js"></script>
+    <script>
+        $(function(){
+            $("#url_button").mousedown(function(){
+                $("#link").attr('href', 'http://lib.dongguk.edu');
+            })
+            $("#pic_button").mousedown(function(){
+                $("img").attr('src', '2.PNG');
+            });
+        });
+    </script>
+</head>
+<body>
+    <a id="link" href="http://www.dongguk.edu">페이지 이동</a>
+    <button id="url_button">URL 변경</button>
+    <div>
+        <img src="1.PNG" style="width: 400px; height:300px; margin-top: 20px;">
+    </div>
+    <button id="pic_button">사진 변경</button>
+</body>
+</html>

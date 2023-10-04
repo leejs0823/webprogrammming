@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<htm>
+<head>
+    <title>5주차 1번</title>
+    <script src="https://code.jquery.com/jQuery-3.6.1.js"></script>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color:blue;
+        }
+    </style>
+    <script>
+        $(function(){
+            $("#expanding").mousedown(function(){
+                var wid = $("#box").width();
+                $("#box").css('width',wid+50);
+            });
+            $("#reduction").mousedown(function(){
+                var wid = $("#box").width();
+                $("#box").css('width', wid-50);
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <button id="expanding">상자 확대</button>
+    <button id="reduction">상자 축소</button>
+</body>
+</html>

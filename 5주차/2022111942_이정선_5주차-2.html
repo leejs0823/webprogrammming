@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<htm>
+<head>
+    <title>5주차 2번</title>
+<script src="https://code.jquery.com/jQuery-3.6.1.js"></script>
+<script>
+    $(function(){
+        $("#start").mousedown(function(){
+            $("#pic").fadeIn().fadeOut().show("slow");
+        });
+        $("#stop").mousedown(function(){
+            $("#pic").hide("slow");
+        });
+    });
+</script>
+</head>
+<body>
+    <div>
+        <button id="start">시작</button>
+        <button id="stop">정지</button>
+    </div>
+    <div>
+        <img id="pic"src="1.PNG" style="display: none; margin-top: 50px;">
+    </div>
+</body>
+</html>
